@@ -48,6 +48,7 @@ public class ReadExcel {
 		}
 		return rowcount;
 	}
+	
 	public static int getCellCount(String xlfile,String xlsheet,int rownum) {
 		try {
 			fs=new FileInputStream(xlfile);
@@ -74,6 +75,7 @@ public class ReadExcel {
 		}
 		return cellcount;
 	}
+	
 	public static String getCellData(String xlfile,String xlsheet,int rownum,int colnum) {
 		try {
 			fs=new FileInputStream(xlfile);
@@ -121,6 +123,7 @@ public class ReadExcel {
 		}
 		return Data;
 	}
+	
 	public static void setCellData(String xlfile,String xlsheet,int rownum,int colnum,String data) {
 		try {
 			fs=new FileInputStream(xlfile);

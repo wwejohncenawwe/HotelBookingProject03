@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ReadConfig {
-	
+
 	public File file;
 	public Properties properties;
 	public FileInputStream fileinputstream;
@@ -26,15 +26,17 @@ public class ReadConfig {
 			e.printStackTrace();
 		}
 	}
+
 	public String getApplicationUrl() {
 		String applicationurl=properties.getProperty("ApplicationUrl");
 		return applicationurl;
 	}
+
 	public String getChromeLoaction() {
 		String browserLocation=properties.getProperty("ChromeLocation");
 		return browserLocation;
 	}
-	
+
 
 
 

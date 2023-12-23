@@ -1,9 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="suite">
+	<listeners>
+			<listener class-name="com.hotel.utility.ReportingListner"></listener>
+		</listeners>
 	<test name="test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.hotel.testcase.RegisterTestcase01"></class>
-		</classes>
+			<class name="com.hotel.testcase.LoginTestcase"></class>	
+			<!-- <class name="com.hotel.testcase.LogoutTestcase"></class>
+		<class name="com.hotel.testcase.RegisterTestcase"></class>
+	   	
+	   		<class name="com.hotel.testcase.SearchTestcase"></class>
+	  	<class name="com.hotel.testcase.CancelTestcase"></class>	-->
+	   	
+	  	</classes>
 	</test>
 </suite>

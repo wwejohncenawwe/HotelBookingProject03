@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.hotel.testcase.CancelTestcase">
+        <methods>
+          <include name="loginTC" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.hotel.testcase.CancelTestcase -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [suite] -->

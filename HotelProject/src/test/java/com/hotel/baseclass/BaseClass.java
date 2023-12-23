@@ -25,7 +25,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
@@ -35,6 +37,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.github.automatedowl.tools.AllureEnvironmentWriter;
+import com.google.common.collect.ImmutableMap;
 import com.hotel.utility.ReadConfig;
 
 public class BaseClass {
@@ -45,43 +49,71 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static Logger logger;
 
-    @Parameters("browser")
+	@SuppressWarnings("deprecation")
+	@Parameters("browser")
 	@BeforeMethod
 	public void setUp(@Optional ("brow")String browsername) {
-    	logger=Logger.getLogger(BaseClass.class);
-    	PropertyConfigurator.configure("log4j.properties");
+		logger=Logger.getLogger("Adactin Hotel");
+		PropertyConfigurator.configure("log4j.properties");
+		DesiredCapabilities capabilities;
+		capabilities = DesiredCapabilities.chrome();
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--ignore-certifcate-errors");
+		chromeOptions.addArguments("test-type");
+		capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+
 		switch (browsername) {
 		case "chrome":
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+chromeLocation);
-			driver=new ChromeDriver();
+			driver=new ChromeDriver(capabilities);
 			break;
 		default:
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+chromeLocation);
 			driver=new ChromeDriver();
 			break;
 		}
-		logger.info("Browser going to Launch");
+		logger.info("Browser Going To Launch");
 		logger.info("ChromeBrowser Launched");
 		maximizeBrowser();
 		logger.info("Maximizing Browser");
 		getUrl(appUrl);
 		logger.info("Url Hit");
 		implicityWait();
+		
+		
+		
+	}
+	public void allureEnvironmentWriter() {
+		AllureEnvironmentWriter.allureEnvironmentWriter(
+				ImmutableMap.<String, String>builder()
+		        .put("Browser", "Chrome")
+		        .put("Browser.Version", "109.0.5414.120 ")
+		        .put("URL", "https://Adactin.com")
+		        .build());
 	}
 	public void getUrl(String url) {
 		driver.get(url);
 	}
 	public void maximizeBrowser() {
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 	}
 	public void implicityWait() {
+		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	public void type(WebElement webelement,String value) {
 		webelement.sendKeys(value);
 	}
+	public void clear(WebElement web) {
+		web.clear();
+	}
 	public void btnClick(WebElement webelement) {
 		webelement.click();
+	}
+	public String Text(WebElement web) {
+		String text=web.getText();
+		return text;
 	}
 	public String getTitle() {
 		String title=driver.getTitle();
@@ -115,6 +147,7 @@ public class BaseClass {
 		Actions action=new Actions(driver);
 		action.dragAndDrop(web1, web2);
 	}
+	@SuppressWarnings("null")
 	public void keyPress(int keycode) {
 		Robot robot = null;
 		try {
@@ -124,6 +157,7 @@ public class BaseClass {
 			robot.keyPress(keycode);
 		}
 	}
+	@SuppressWarnings("null")
 	public void keyRelease(int keycode) {
 		Robot robot = null;
 		try {
@@ -159,6 +193,10 @@ public class BaseClass {
 	public void webdriverClickWait(WebElement web) {
 		WebDriverWait wait=new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.elementToBeClickable(web));
+	}
+	public void webdriverVisibleWait(WebElement web) {
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.visibilityOf(web));
 	}
 	public void webdriverAlertWait() {
 		WebDriverWait wait=new WebDriverWait(driver,10);
@@ -197,7 +235,7 @@ public class BaseClass {
 		String timestamp=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		File source=ts.getScreenshotAs(OutputType.FILE);
-		File target=new File(System.getProperty("user.dir")+"/Screenshots/"+timestamp+" "+testname+".png");
+		File target=new File(System.getProperty("user.dir")+"/Screenshot Passed/"+timestamp+" "+testname+".png");
 		try {
 			FileUtils.copyFile(source, target);
 		} catch (IOException e) {
@@ -205,6 +243,7 @@ public class BaseClass {
 		}
 	}
 	public void captureScreenshot2(WebDriver driver,String testname) {
+		String timestamp=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		Robot robot = null;
 		try {
 			robot=new Robot();
@@ -213,7 +252,7 @@ public class BaseClass {
 		}Dimension size=Toolkit.getDefaultToolkit().getScreenSize();
 		Rectangle rec=new Rectangle(size);
 		BufferedImage source=robot.createScreenCapture(rec);
-		File target=new File(System.getProperty("user.dir")+"/Screenshots/"+testname+".png");
+		File target=new File(System.getProperty("user.dir")+"/Screenshot Failed/"+timestamp+" "+testname+".png");
 		try {
 			ImageIO.write(source,"png",target);
 		} catch (IOException e) {
@@ -222,6 +261,6 @@ public class BaseClass {
 	}
 	@AfterMethod
 	public void tearDown() {
-//		driver.quit();
+		driver.quit();
 	}
 }
