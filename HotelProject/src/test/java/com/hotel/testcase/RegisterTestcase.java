@@ -33,9 +33,9 @@ public class RegisterTestcase extends BaseClass{
 
 		pojo.getRegister().setTerms();
 		
-//		pojo.getRegister().setRegisterbtn();
+		pojo.getRegister().setRegisterbtn();
 
-//		pojo.getRegister().setResetbtn();
+		pojo.getRegister().setResetbtn();
 
 	}
 }

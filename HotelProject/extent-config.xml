@@ -3,7 +3,7 @@
   <configuration>
     <!-- report theme -->
     <!-- standard, dark -->
-    <theme>standard</theme>
+    <theme>dark</theme>
   
     <!-- document encoding -->
     <!-- defaults to UTF-8 -->
@@ -20,7 +20,7 @@
     <reportName>Automation Report</reportName>
     
     <!-- location of chart view top/bottom -->
-    <testViewChartLocation>bottom</testViewChartLocation>
+    <testViewChartLocation>top</testViewChartLocation>
     
     <!-- report headline - displayed at top-nav, after reportHeadline -->
     <reportHeadline>topreport</reportHeadline>

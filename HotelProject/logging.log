@@ -1,41 +1,66 @@
-2023-12-23 13:26:39 INFO  Adactin Hotel:63 - Browser Going To Launch
-  2023-12-23 13:26:39 INFO  Adactin Hotel:64 - ChromeBrowser Launched
-  2023-12-23 13:26:40 INFO  Adactin Hotel:66 - Maximizing Browser
-  2023-12-23 13:26:44 INFO  Adactin Hotel:68 - Url Hit
-  2023-12-23 13:29:55 INFO  Adactin Hotel:63 - Browser Going To Launch
-  2023-12-23 13:29:55 INFO  Adactin Hotel:64 - ChromeBrowser Launched
-  2023-12-23 13:29:55 INFO  Adactin Hotel:66 - Maximizing Browser
-  2023-12-23 13:29:59 INFO  Adactin Hotel:68 - Url Hit
-  2023-12-23 13:30:00 INFO  Adactin Hotel:61 - User Entered The Valid UserName
-  2023-12-23 13:30:00 INFO  Adactin Hotel:67 - User Entered The Valid PassWord
-  2023-12-23 13:30:01 INFO  Adactin Hotel:73 - User Clicked LoginButton
-  2023-12-23 13:30:02 INFO  Adactin Hotel:77 - User Login Success And Pass Snap Capture
-  2023-12-23 13:30:03 INFO  Adactin Hotel:91 - User Logout Pass And Pass Snap Capture
-  2023-12-23 14:15:00 INFO  Adactin Hotel:63 - Browser Going To Launch
-  2023-12-23 14:15:00 INFO  Adactin Hotel:64 - ChromeBrowser Launched
-  2023-12-23 14:15:00 INFO  Adactin Hotel:66 - Maximizing Browser
-  2023-12-23 14:15:04 INFO  Adactin Hotel:68 - Url Hit
-  2023-12-23 14:15:17 INFO  Adactin Hotel:77 - User Is On AdactinHotel Login Page And Snap Capture For Reference
-  2023-12-23 14:15:17 INFO  Adactin Hotel:88 - User Entered The Valid UserName
-  2023-12-23 14:15:17 INFO  Adactin Hotel:94 - User Entered The Valid PassWord
-  2023-12-23 14:15:20 INFO  Adactin Hotel:100 - User Clicked LoginButton
-  2023-12-23 14:15:21 INFO  Adactin Hotel:105 - User Login Success And Pass Snap Capture
-  2023-12-23 14:37:57 INFO  Adactin Hotel:63 - Browser Going To Launch
-  2023-12-23 14:37:57 INFO  Adactin Hotel:64 - ChromeBrowser Launched
-  2023-12-23 14:37:57 INFO  Adactin Hotel:66 - Maximizing Browser
-  2023-12-23 14:38:01 INFO  Adactin Hotel:68 - Url Hit
-  2023-12-23 14:38:03 INFO  Adactin Hotel:77 - User Is On AdactinHotel Login Page And Snap Capture For Reference
-  2023-12-23 14:38:04 INFO  Adactin Hotel:88 - User Entered The Valid UserName
-  2023-12-23 14:38:04 INFO  Adactin Hotel:94 - User Entered The Valid PassWord
-  2023-12-23 14:38:05 INFO  Adactin Hotel:100 - User Clicked LoginButton
-  2023-12-23 14:38:05 INFO  Adactin Hotel:105 - User Login Success And Pass Snap Capture
-  2023-12-23 15:30:06 INFO  Adactin Hotel:65 - Browser Going To Launch
-  2023-12-23 15:30:06 INFO  Adactin Hotel:66 - ChromeBrowser Launched
-  2023-12-23 15:30:07 INFO  Adactin Hotel:68 - Maximizing Browser
-  2023-12-23 15:30:10 INFO  Adactin Hotel:70 - Url Hit
-  2023-12-23 15:30:12 INFO  Adactin Hotel:77 - User Is On AdactinHotel Login Page And Snap Capture For Reference
-  2023-12-23 15:30:13 INFO  Adactin Hotel:88 - User Entered The Valid UserName
-  2023-12-23 15:30:13 INFO  Adactin Hotel:94 - User Entered The Valid PassWord
-  2023-12-23 15:30:15 INFO  Adactin Hotel:100 - User Clicked LoginButton
-  2023-12-23 15:30:15 INFO  Adactin Hotel:105 - User Login Success And Pass Snap Capture
+2024-01-11 21:14:38 INFO  Adactin Hotel:75 - Browser Going To Launch
+  2024-01-11 21:14:38 INFO  Adactin Hotel:76 - ChromeBrowser Launched
+  2024-01-11 21:14:39 INFO  Adactin Hotel:78 - Maximizing Browser
+  2024-01-11 21:14:41 INFO  Adactin Hotel:80 - Url Hit
+  2024-01-11 21:14:43 INFO  Adactin Hotel:77 - User Is On AdactinHotel Login Page And Snap Capture For Reference
+  2024-01-11 21:14:43 INFO  Adactin Hotel:88 - User Entered The Valid UserName
+  2024-01-11 21:14:43 INFO  Adactin Hotel:94 - User Entered The Valid PassWord
+  2024-01-11 21:14:44 INFO  Adactin Hotel:100 - User Clicked LoginButton
+  2024-01-11 21:14:44 INFO  Adactin Hotel:105 - User Login Success And Pass Snap Capture
+  2024-01-11 21:14:51 INFO  Adactin Hotel:75 - Browser Going To Launch
+  2024-01-11 21:14:51 INFO  Adactin Hotel:76 - ChromeBrowser Launched
+  2024-01-11 21:14:52 INFO  Adactin Hotel:78 - Maximizing Browser
+  2024-01-11 21:14:54 INFO  Adactin Hotel:80 - Url Hit
+  2024-01-11 21:14:55 INFO  Adactin Hotel:197 - User Is On AdactinHotel Login Page And Snap Capture For Reference
+  2024-01-11 21:14:55 INFO  Adactin Hotel:208 - User Entered The Valid UserName
+  2024-01-11 21:14:55 INFO  Adactin Hotel:214 - User Entered The Valid PassWord
+  2024-01-11 21:14:56 INFO  Adactin Hotel:220 - User Clicked LoginButton
+  2024-01-11 21:14:57 INFO  Adactin Hotel:225 - User Login Success And Pass Snap Capture
+  2024-01-11 21:14:57 INFO  Adactin Hotel:251 - User Is On Search Menu Page And Snap Capture For Reference
+  2024-01-11 21:14:57 INFO  Adactin Hotel:261 - User Selected The Location
+  2024-01-11 21:14:57 INFO  Adactin Hotel:267 - User Selected The Hotel
+  2024-01-11 21:14:58 INFO  Adactin Hotel:273 - User Selected The Roomtype
+  2024-01-11 21:14:58 INFO  Adactin Hotel:279 - Numberofroom All Ready Selected So Moved To Next Line
+  2024-01-11 21:14:58 INFO  Adactin Hotel:289 - User Cleared Old Indate
+  2024-01-11 21:14:58 INFO  Adactin Hotel:291 - User Entered The New Indate
+  2024-01-11 21:14:58 INFO  Adactin Hotel:297 - User Cleared Old Outdate
+  2024-01-11 21:14:58 INFO  Adactin Hotel:299 - User Entered The New Outdate
+  2024-01-11 21:14:58 INFO  Adactin Hotel:305 - Adultroom All Ready Selected So Moved To Next Line
+  2024-01-11 21:14:58 INFO  Adactin Hotel:315 - Childerenroom All Ready Selected So Moved To Next Line
+  2024-01-11 21:14:59 INFO  Adactin Hotel:325 - User Clicked Search Button
+  2024-01-11 21:15:00 INFO  Adactin Hotel:335 - User Hotel Search Success And Pass Snap Capture
+  2024-01-11 21:15:05 INFO  Adactin Hotel:75 - Browser Going To Launch
+  2024-01-11 21:15:05 INFO  Adactin Hotel:76 - ChromeBrowser Launched
+  2024-01-11 21:15:05 INFO  Adactin Hotel:78 - Maximizing Browser
+  2024-01-11 21:15:09 INFO  Adactin Hotel:80 - Url Hit
+  2024-01-11 21:15:09 INFO  Adactin Hotel:61 - User Entered The Valid UserName
+  2024-01-11 21:15:09 INFO  Adactin Hotel:67 - User Entered The Valid PassWord
+  2024-01-11 21:15:10 INFO  Adactin Hotel:73 - User Clicked LoginButton
+  2024-01-11 21:15:11 INFO  Adactin Hotel:77 - User Login Success And Pass Snap Capture
+  2024-01-11 21:15:12 INFO  Adactin Hotel:91 - User Logout Pass And Pass Snap Capture
+  2024-01-11 21:15:17 INFO  Adactin Hotel:75 - Browser Going To Launch
+  2024-01-11 21:15:17 INFO  Adactin Hotel:76 - ChromeBrowser Launched
+  2024-01-11 21:15:18 INFO  Adactin Hotel:78 - Maximizing Browser
+  2024-01-11 21:15:20 INFO  Adactin Hotel:80 - Url Hit
+  2024-01-11 21:15:21 INFO  Adactin Hotel:208 - User Is On AdactinHotel Login Page And Snap Capture For Reference
+  2024-01-11 21:15:21 INFO  Adactin Hotel:219 - User Entered The Valid UserName
+  2024-01-11 21:15:21 INFO  Adactin Hotel:225 - User Entered The Valid PassWord
+  2024-01-11 21:15:22 INFO  Adactin Hotel:231 - User Clicked LoginButton
+  2024-01-11 21:15:23 INFO  Adactin Hotel:236 - User Login Success And Pass Snap Capture
+  2024-01-11 21:15:24 INFO  Adactin Hotel:262 - User Is On Search Menu Page And Snap Capture For Reference
+  2024-01-11 21:15:24 INFO  Adactin Hotel:272 - User Selected The Location
+  2024-01-11 21:15:24 INFO  Adactin Hotel:278 - User Selected The Hotel
+  2024-01-11 21:15:24 INFO  Adactin Hotel:284 - User Selected The Roomtype
+  2024-01-11 21:15:24 INFO  Adactin Hotel:290 - Numberofroom All Ready Selected So Moved To Next Line
+  2024-01-11 21:15:24 INFO  Adactin Hotel:300 - User leared Old Indate
+  2024-01-11 21:15:25 INFO  Adactin Hotel:302 - User Entered The New Indate
+  2024-01-11 21:15:25 INFO  Adactin Hotel:308 - User leared Old Outdate
+  2024-01-11 21:15:25 INFO  Adactin Hotel:310 - User Entered The New Outdate
+  2024-01-11 21:15:25 INFO  Adactin Hotel:316 - Adultroom All Ready Selected So Moved To Next Line
+  2024-01-11 21:15:25 INFO  Adactin Hotel:326 - Childerenroom All Ready Selected So Moved To Next Line
+  2024-01-11 21:15:26 INFO  Adactin Hotel:336 - User Clicked Search Button
+  2024-01-11 21:15:26 INFO  Adactin Hotel:346 - User Hotel Search Success And Pass Snap Capture
+  2024-01-11 21:15:26 INFO  Adactin Hotel:416 - User Selected The Hotel
+  2024-01-11 21:15:27 INFO  Adactin Hotel:422 - User Clicked Hotel Cancel Button
+  2024-01-11 21:15:28 INFO  Adactin Hotel:427 - User Canceled Hotel Booking Page And Back To Search Page And Pass Snap Capture
   
